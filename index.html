@@ -6,30 +6,38 @@
   <title>Portafolio</title>
   <link href="style.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/11ef7696b0.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+$(document).ready(function(){
+  $("#menu-btn").click(function(){
+    $(".menu").css("right", "0%");
+    $("#menu-btn").css("visibility","hidden");
+  });
+  $("#close-btn").click(function(){
+    $(".menu").css("right", "-70%");
+        $("#menu-btn").css("visibility","visible");
+  });
+});
+    </script>
 </head>
 <body>
 
 <div class="top">
-	<img src="">
-	<div id="nav">
-		<ul>
-			<li><a href="#">INICIO</a></li>
-			<li><a href="#">PROYECTOS</a></li>
-			<li><a href="#">CONTACTO</a></li>
-		</ul>
-	</div>
+	<a href=""><img src=""></a>
+	<a id="menu-btn"><i class="fas fa-bars"></i></a>
 </div>
 
-<div class="slideout">
-		<ul>
-			<li><a href="#">INICIO</a></li>
-			<li><a href="#">PROYECTOS</a></li>
-			<li><a href="#">CONTACTO</a></li>
-		</ul>
-</div>
-
+<div class="menu">
+	<ul>
+		<a id="close-btn"><i class="fas fa-times"></i></a>
+		<li><a id="first" href="">INICIO</a></li>
+		<li><a href="">PROYECTOS</a></li>
+		<li><a href="">CONTACTO</a></li>
+	</ul>
+</div>	
 
 	<div id="slider">
 		<figure>
@@ -38,6 +46,9 @@
 			<img src="Imagenes/actualizaciones.png">
 		</figure>
 	</div>
+<div class="content">
+
+</div>
 
 </body>
 </html>
