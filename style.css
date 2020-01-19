@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    width: 100%; overflow: hidden
+    width: 100vw; overflow: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -43,32 +43,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html, body {margin: 0; }
+html, body {margin: 0; width: 100vw;}
 
 /*DISEÑO MOVIL*/
-/*TOP*/
-
-.top{
-    height:10vh;
-    background-color:#494949;
-    width:100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    z-index:-1;
-}
-
-.top i{
-    color:white;
-    font-size:28px;
-    display:flex;
-    justify-content: flex-end;
-    margin-right:20px;
-}
-
 
 .menu{
-    position:absolute;
+    position:fixed;
     top:0px;
     right:-70%;
     width:70%;
@@ -102,6 +82,24 @@ html, body {margin: 0; }
     font-size:24px;
     padding:0px 10px;
 }
+/*TOP*/
+
+.top{
+    height:10vh;
+    background-color:#494949;
+    width:100%;
+    z-index:-1;
+}
+
+.top i{
+    color:white;
+    font-size:28px;
+    display:flex;
+    justify-content: flex-end;
+    margin-right:20px;
+}
+
+
 
 #first
 {
