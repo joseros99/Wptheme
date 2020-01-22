@@ -87,7 +87,7 @@ html, body {margin: 0; width: 100vw;}
 .top{    
     top:0px;
     position:fixed;
-    height:5vh;
+    height:8vh;
     background-color:#282527;
     width:100%;
     z-index:-1;
@@ -126,7 +126,7 @@ html, body {margin: 0; width: 100vw;}
     position:relative;
     width:100%; 
     z-index: -2;
-    top:5vh;
+    top:8vh;
     background:black;
 
 }
