@@ -72,7 +72,7 @@ html, body {margin: 0; width: 100vw;}
 
 
 .menu ul li{
-        display:flex;
+    display:flex;
     flex-direction: row;
     justify-content: flex-end;
 }
@@ -91,6 +91,7 @@ html, body {margin: 0; width: 100vw;}
     background-color:#282527;
     width:100%;
     z-index:-1;
+    z-index:1;
     display:flex;
     flex-direction:row;
     justify-content: space-between;
@@ -104,7 +105,7 @@ html, body {margin: 0; width: 100vw;}
     display:flex;
     justify-content: flex-end;
     margin-right:30px;
-}
+    }
 
 
 
@@ -118,14 +119,13 @@ html, body {margin: 0; width: 100vw;}
 .content{
     width:100%;  
     margin:0px;
-
+    z-index:-321;
 }
 
 .welcome{
     height:auto;
     position:relative;
     width:100%; 
-    z-index: -2;
     top:8vh;
     background:black;
 
@@ -205,7 +205,5 @@ html, body {margin: 0; width: 100vw;}
     100% {
         left: -200%;
     }
-
-    
 }
 
